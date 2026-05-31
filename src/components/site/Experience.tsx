@@ -2,40 +2,40 @@ import { useReveal } from "@/hooks/use-reveal";
 
 const projects = [
   {
-    year: "2021 — 2024",
-    title: "Luxury Coastal Residence",
-    location: "Ballito, KZN North Coast",
-    scope: "R18M new build · 850m² · 14-month programme",
-    body: "Full project oversight from architectural sign-off through handover. Managed three subcontractor packages and saved the client over R600k through variation review.",
+    year: "Phase 01",
+    title: "Pre-Construction Support",
+    location: "Planning & Tendering",
+    scope: "Quote Review · Price Comparison · Contract Analysis",
+    body: "Reviewing builder quotations and comparing pricing to identify missing items or hidden costs. We clarify complex contract terminology and help you thoroughly evaluate variations and allowances before ground is even broken.",
   },
   {
-    year: "2019 — 2021",
-    title: "Hilltop Estate Development",
-    location: "Hillcrest, KZN Midlands",
-    scope: "Cluster of 6 family homes · phased delivery",
-    body: "Advised the developer on workmanship standards and snagging across all units. Implemented a weekly inspection cadence that reduced defect rework by 40%.",
+    year: "Phase 02",
+    title: "During Construction",
+    location: "Active Build Oversight",
+    scope: "Progress Monitoring · Quality Observations · Cost Guidance",
+    body: "Conducting regular project reviews and objective site progress monitoring. We offer independent quality observations, streamline communication channels with your builder, and provide practical guidance on unexpected variations or additional costs.",
   },
   {
-    year: "2016 — 2019",
-    title: "Heritage Farmhouse Restoration",
-    location: "Midlands Meander",
-    scope: "Sympathetic renovation · stone & timber",
-    body: "Coordinated specialist trades to preserve original character while modernising services. Liaised directly with heritage authorities and the contracted builder.",
+    year: "Phase 03",
+    title: "Completion Stage",
+    location: "Final Closeout",
+    scope: "Defects Identification · Snag Lists · Handover Assistance",
+    body: "Providing thorough final inspection support and detailed defects identification. We guide you confidently through the practical completion framework and step-by-step handover assistance to ensure the final product meets the high standard promised.",
   },
   {
-    year: "2010 — 2016",
-    title: "Senior Site Manager",
-    location: "National contractor, Durban",
-    scope: "Residential portfolio · 30+ projects",
-    body: "Site-level leadership across upmarket residential builds — programme, quality, health & safety, and client liaison.",
+    year: "Our Edge",
+    title: "Independent Advocacy",
+    location: "Client-Focused Alignment",
+    scope: "Exclusive Homeowner Representation · Objective Advice",
+    body: "We work exclusively for homeowners—never builders or contractors. This baseline independence ensures your budget, design intentions, and structural investments remain the single defining priority across every phase of development.",
   },
 ];
 
 const credentials = [
-  "25+ years in residential construction",
-  "Registered Construction Project Manager (SACPCMP)",
-  "NHBRC compliance specialist",
-  "JBCC & NEC contract literate",
+  "New Homes, Renovations & Extensions",
+  "Independent quotation & variation analysis",
+  "Objective progress & workmanship monitoring",
+  "Meticulous defect identification & handover support",
 ];
 
 export function Experience() {
@@ -52,18 +52,19 @@ export function Experience() {
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-px w-10 bg-[var(--gold)]" />
                 <span className="text-xs uppercase tracking-[0.35em] text-[var(--gold-soft)]">
-                  Experience
+                  Our Approach
                 </span>
               </div>
               <h2 className="font-display text-4xl sm:text-5xl leading-tight">
-                A quarter-century on
-                <span className="block text-gradient-gold italic">South African sites.</span>
+                Protecting your investment.
+                <span className="block text-gradient-gold italic">Guiding your build.</span>
               </h2>
             </div>
             <div className="lg:col-span-6 lg:col-start-7 lg:pt-6">
               <p className="text-white/80 leading-relaxed text-lg">
-                A career built on hard hats, honest reporting, and homes finished to the
-                standard they were promised. Selected projects below.
+                Whether you are planning a new home, an extensive renovation, or a structural extension, 
+                BuildWise Consulting provides independent guidance and practical project oversight to keep 
+                your build on track and completely eliminate costly mistakes.
               </p>
               <ul className="mt-8 grid sm:grid-cols-2 gap-x-6 gap-y-3">
                 {credentials.map((c) => (
@@ -103,7 +104,7 @@ export function Experience() {
           </div>
 
           <p className="mt-16 text-xs uppercase tracking-[0.3em] text-white/40 text-center">
-            Placeholder content — edit with your verified project history
+            BuildWise Consulting • Independent Advice • Practical Guidance • Better Outcomes
           </p>
         </div>
       </div>
