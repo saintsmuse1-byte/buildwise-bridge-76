@@ -1,19 +1,19 @@
+import heroVideo from "@/assets/hero-aerial.mp4.asset.json";
+import heroPoster from "@/assets/garlington-aerial.jpg";
+
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden">
-      {/* Aerial countryside estate video — replace src with your own footage anytime */}
+      {/* Aerial countryside estate video */}
       <video
         className="absolute inset-0 h-full w-full object-cover"
         autoPlay
         muted
         loop
         playsInline
-        poster="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=2000&q=80"
+        poster={heroPoster}
       >
-        <source
-          src="https://cdn.coverr.co/videos/coverr-aerial-view-of-a-suburban-neighborhood-2633/1080p.mp4"
-          type="video/mp4"
-        />
+        <source src={heroVideo.url} type="video/mp4" />
       </video>
 
       {/* Overlays */}
