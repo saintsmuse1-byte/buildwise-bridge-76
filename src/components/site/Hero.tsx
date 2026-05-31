@@ -1,5 +1,5 @@
 import heroVideo from "@/assets/hero-aerial.mp4.asset.json";
-import heroPoster from "@/assets/garlington-aerial.jpg";
+import heroPoster from "@/assets/hero-aerial-poster.jpg";
 
 export function Hero() {
   return (
