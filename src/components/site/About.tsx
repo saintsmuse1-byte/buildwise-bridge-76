@@ -48,20 +48,21 @@ export function About() {
 
           <div className="lg:col-span-7 lg:pt-16">
             <p className="text-xl text-[var(--navy)] leading-relaxed font-light">
-              Building a home is one of the largest investments most families ever make —
-              yet homeowners often face the process alone, navigating contracts, costs and
-              construction decisions without an advocate.
+              James Robinson is an experienced construction and business professional with a strong 
+              background in managing complex projects, financial oversight, and high-pressure negotiations. 
+              Over many years working within demanding corporate environments, he has developed the 
+              interpersonal and problem-solving skills needed to manage difficult situations calmly and effectively.
             </p>
             <p className="mt-6 text-base text-[var(--navy-soft)] leading-relaxed">
-              That's where BuildWise comes in. As your dedicated project management consultant,
-              I act as the independent bridge between you and your builder. My role is simple:
-              protect your interests, eliminate costly surprises, and ensure the finished
-              project lives up to its promise. From the first quotation through to final
-              handover, you have an experienced ally in your corner.
+              As founder of BuildWise Consulting, James provides independent homeowner-side support 
+              the building journey. His role is to help bridge the gap between builder and client by 
+              offering practical guidance on budgeting, quotations, variations, communication, and overall 
+              project oversight.
             </p>
             <p className="mt-6 text-base text-[var(--navy-soft)] leading-relaxed">
-              Based in KwaZulu-Natal, I work with homeowners across the province on
-              residential builds and renovations — large and small.
+              Combining commercial experience with real-world construction knowledge, James helps homeowners 
+              avoid unnecessary stress and costly mistakes, providing confidence and peace of mind during 
+              one of the biggest investments they will ever make.
             </p>
 
             <div className="mt-12 grid sm:grid-cols-3 gap-6">
