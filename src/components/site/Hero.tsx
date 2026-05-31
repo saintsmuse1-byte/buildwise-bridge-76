@@ -16,9 +16,9 @@ export function Hero() {
         <source src={heroVideo.url} type="video/mp4" />
       </video>
 
-      {/* Overlays */}
-      <div className="absolute inset-0 bg-[var(--navy-deep)]/35" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[var(--navy-deep)]/20 via-transparent to-[var(--navy-deep)]/80" />
+      {/* Overlays — keep video visible, darken behind text only */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[var(--navy-deep)]/75 via-[var(--navy-deep)]/30 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[var(--navy-deep)]/70 to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 min-h-screen flex flex-col justify-center pt-24 pb-32">
