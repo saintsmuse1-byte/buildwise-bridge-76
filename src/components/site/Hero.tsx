@@ -17,8 +17,8 @@ export function Hero() {
       </video>
 
       {/* Overlays */}
-      <div className="absolute inset-0 bg-[var(--navy-deep)]/60" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[var(--navy-deep)]/40 via-transparent to-[var(--navy-deep)]" />
+      <div className="absolute inset-0 bg-[var(--navy-deep)]/35" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[var(--navy-deep)]/20 via-transparent to-[var(--navy-deep)]/80" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 min-h-screen flex flex-col justify-center pt-24 pb-32">
