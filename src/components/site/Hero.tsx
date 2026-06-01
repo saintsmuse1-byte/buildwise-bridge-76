@@ -26,17 +26,17 @@ export function Hero() {
           <div className="flex items-center gap-3 mb-8">
             <span className="h-px w-12 bg-[var(--gold)]" />
             <span className="text-xs uppercase tracking-[0.35em] text-[var(--gold-soft)]">
-              Building Project Management
+              Project Coordination
             </span>
           </div>
 
           <h1 className="font-display text-white text-5xl sm:text-6xl lg:text-7xl leading-[1.05]">
-            Your trusted bridge between
+            Your bridge between
             <span className="block text-gradient-gold italic">homeowner & builder.</span>
           </h1>
 
           <p className="mt-8 text-lg sm:text-xl text-white/80 max-w-2xl leading-relaxed">
-            BuildWise Consulting protects your interests at every stage of construction —
+            BuildWise Consulting protects your interests at every stage of construction,
             from reviewing quotations and variations to monitoring workmanship with
             seasoned, practical guidance.
           </p>
