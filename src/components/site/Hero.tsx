@@ -1,19 +1,17 @@
-import heroVideo from "@/assets/hero-aerial.mp4.asset.json";
-import heroPoster from "@/assets/hero-aerial-poster.jpg";
+import heroVideo from "@/assets/hero.mp4";
 
 export function Hero() {
   return (
-    <section id="home" className="relative min-h-screen w-full overflow-hidden">
+    <section id="home" className="relative min-h-screen w-full overflow-hidden bg-[var(--navy-deep)]">
       {/* Aerial countryside estate video */}
       <video
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover bg-[var(--navy-deep)]"
         autoPlay
         muted
         loop
         playsInline
-        poster={heroPoster}
       >
-        <source src={heroVideo.url} type="video/mp4" />
+        <source src={heroVideo} type="video/mp4" />
       </video>
 
       {/* Overlays — keep video visible, darken behind text only */}
