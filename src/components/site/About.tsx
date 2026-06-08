@@ -1,4 +1,5 @@
 import { useReveal } from "@/hooks/use-reveal";
+import profileImage from "@/assets/profile.jpg";
 
 const pillars = [
   {
@@ -33,16 +34,13 @@ export function About() {
               Principal Consultant
             </p>
 
-            <div className="mt-10 aspect-[4/5] w-full bg-gradient-to-br from-[var(--navy)] to-[var(--navy-deep)] relative overflow-hidden">
-              <div className="absolute inset-4 border border-[var(--gold)]/40" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="font-display text-[var(--gold-soft)] text-8xl opacity-60">JR</span>
-              </div>
-              <div className="absolute bottom-4 left-4 right-4 text-center">
-                <p className="text-[10px] uppercase tracking-[0.3em] text-white/60">
-                  Portrait placeholder
-                </p>
-              </div>
+            <div className="mt-10 aspect-[4/5] w-full relative overflow-hidden bg-[var(--navy)]">
+              <img
+                src={profileImage}
+                alt="Portrait of James Robinson"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-4 border border-[var(--gold)]/40 pointer-events-none" />
             </div>
           </div>
 

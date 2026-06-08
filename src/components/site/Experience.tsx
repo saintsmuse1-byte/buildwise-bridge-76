@@ -1,48 +1,52 @@
 import { useReveal } from "@/hooks/use-reveal";
 
-const projects = [
+const phases = [
   {
-    year: "Phase 01",
-    title: "Pre-Construction Support",
-    location: "Planning & Tendering",
-    scope: "Quote Review · Price Comparison · Contract Analysis",
-    body: "Reviewing builder quotations and comparing pricing to identify missing items or hidden costs. We clarify complex contract terminology and help you thoroughly evaluate variations and allowances before ground is even broken.",
+    phase: "Phase 01",
+    title: "Project Foundation",
+    subtitle: "Define scope, budget and risk early",
+    highlights: "Scope validation · Budget clarity · Contract review",
+    description:
+      "We establish a strong project foundation by reviewing tender packages, builder quotations and contract terms. Early scope validation reduces hidden costs and gives you the confidence to proceed with the right builder.",
   },
   {
-    year: "Phase 02",
-    title: "During Construction",
-    location: "Active Build Oversight",
-    scope: "Progress Monitoring · Quality Observations · Cost Guidance",
-    body: "Conducting regular project reviews and objective site progress monitoring. We offer independent quality observations, streamline communication channels with your builder, and provide practical guidance on unexpected variations or additional costs.",
+    phase: "Phase 02",
+    title: "Pre-Construction Planning",
+    subtitle: "Align design, pricing and approvals",
+    highlights: "Quote analysis · Variation management · Design coordination",
+    description:
+      "We validate allowances, compare pricing and confirm deliverables before work begins. This phase makes sure your design intent, finishes and structural scope are locked in ahead of construction.",
   },
   {
-    year: "Phase 03",
-    title: "Completion Stage",
-    location: "Final Closeout",
-    scope: "Defects Identification · Snag Lists · Handover Assistance",
-    body: "Providing thorough final inspection support and detailed defects identification. We guide you confidently through the practical completion framework and step-by-step handover assistance to ensure the final product meets the high standard promised.",
+    phase: "Phase 03",
+    title: "Construction Oversight",
+    subtitle: "Monitor progress with independent insight",
+    highlights: "Site reviews · Quality assessment · Cost guidance",
+    description:
+      "During the build we provide objective progress monitoring, identify workmanship issues and advise on variations. Your project stays on track without relying only on builder reporting.",
   },
   {
-    year: "Our Edge",
-    title: "Independent Advocacy",
-    location: "Client-Focused Alignment",
-    scope: "Exclusive Homeowner Representation · Objective Advice",
-    body: "We work exclusively for homeowners—never builders or contractors. This baseline independence ensures your budget, design intentions, and structural investments remain the single defining priority across every phase of development.",
+    phase: "Phase 04",
+    title: "Completion & Handover",
+    subtitle: "Capture defects and close with confidence",
+    highlights: "Snag lists · Practical completion review · Handover support",
+    description:
+      "At practical completion we inspect the finished work, document defects and guide your handover process. The result is a cleaner handover and a stronger outcome for your investment.",
   },
 ];
 
-const credentials = [
-  "New Homes, Renovations & Extensions",
-  "Independent quotation & variation analysis",
-  "Objective progress & workmanship monitoring",
-  "Meticulous defect identification & handover support",
+const coreBenefits = [
+  "Independent homeowner advocacy",
+  "Clear cost and scope validation",
+  "Objective progress and quality oversight",
+  "Practical completion support and handover clarity",
 ];
 
 export function Experience() {
   const ref = useReveal<HTMLDivElement>();
+
   return (
     <section id="experience" className="relative bg-[var(--navy-deep)] py-28 sm:py-36 text-white overflow-hidden">
-      {/* Decorative gold rule */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--gold)] to-transparent opacity-50" />
 
       <div className="mx-auto max-w-7xl px-6">
@@ -52,25 +56,23 @@ export function Experience() {
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-px w-10 bg-[var(--gold)]" />
                 <span className="text-xs uppercase tracking-[0.35em] text-[var(--gold-soft)]">
-                  Our Approach
+                  BuildWise Lifecycle
                 </span>
               </div>
               <h2 className="font-display text-4xl sm:text-5xl leading-tight">
-                Protecting your investment.
-                <span className="block text-gradient-gold italic">Guiding your build.</span>
+                Navigate every stage of your build.
+                <span className="block text-gradient-gold italic">From planning to practical completion.</span>
               </h2>
             </div>
             <div className="lg:col-span-6 lg:col-start-7 lg:pt-6">
               <p className="text-white/80 leading-relaxed text-lg">
-                Whether you are planning a new home, an extensive renovation, or a structural extension, 
-                BuildWise Consulting provides independent guidance and practical project oversight to keep 
-                your build on track and completely eliminate costly mistakes.
+                BuildWise provides independent guidance across the full project lifecycle so you can avoid costly surprises, manage variations, and achieve a smooth handover.
               </p>
               <ul className="mt-8 grid sm:grid-cols-2 gap-x-6 gap-y-3">
-                {credentials.map((c) => (
-                  <li key={c} className="flex items-start gap-3 text-sm text-white/85">
+                {coreBenefits.map((benefit) => (
+                  <li key={benefit} className="flex items-start gap-3 text-sm text-white/85">
                     <span className="mt-2 h-1 w-1 rounded-full bg-[var(--gold)] flex-shrink-0" />
-                    {c}
+                    {benefit}
                   </li>
                 ))}
               </ul>
@@ -78,25 +80,24 @@ export function Experience() {
           </div>
 
           <div className="relative">
-            {/* Timeline rule */}
             <div className="absolute left-0 md:left-1/4 top-0 bottom-0 w-px bg-white/10" />
 
             <div className="space-y-14">
-              {projects.map((p) => (
-                <div key={p.title} className="grid md:grid-cols-4 gap-6 md:gap-10 relative">
+              {phases.map((phase) => (
+                <div key={phase.title} className="grid md:grid-cols-4 gap-6 md:gap-10 relative">
                   <div className="md:col-span-1 pl-6 md:pl-0 relative">
                     <span className="absolute left-0 md:left-auto md:right-[calc(0%-1px-12px)] top-2 h-2 w-2 rounded-full bg-[var(--gold)] -translate-x-1/2 md:translate-x-0" />
-                    <div className="text-[var(--gold)] font-display text-xl">{p.year}</div>
+                    <div className="text-[var(--gold)] font-display text-xl">{phase.phase}</div>
                     <div className="text-xs uppercase tracking-[0.25em] text-white/50 mt-2">
-                      {p.location}
+                      {phase.subtitle}
                     </div>
                   </div>
                   <div className="md:col-span-3 pl-6 md:pl-10 border-l border-white/10 md:border-l-0">
-                    <h3 className="font-display text-2xl sm:text-3xl mb-2">{p.title}</h3>
+                    <h3 className="font-display text-2xl sm:text-3xl mb-2">{phase.title}</h3>
                     <div className="text-sm text-[var(--gold-soft)] mb-4 tracking-wide">
-                      {p.scope}
+                      {phase.highlights}
                     </div>
-                    <p className="text-white/75 leading-relaxed max-w-2xl">{p.body}</p>
+                    <p className="text-white/75 leading-relaxed max-w-2xl">{phase.description}</p>
                   </div>
                 </div>
               ))}
